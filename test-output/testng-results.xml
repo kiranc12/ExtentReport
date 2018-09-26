@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[test]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2018-09-26T09:34:57Z" name="Default suite" finished-at="2018-09-26T09:35:03Z" duration-ms="6769">
+    <groups>
+    </groups>
+    <test started-at="2018-09-26T09:34:57Z" name="Default test" finished-at="2018-09-26T09:35:03Z" duration-ms="6769">
+      <class name="script.TestDemo">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:script.TestDemo@21b2e768]" started-at="2018-09-26T09:34:57Z" name="openApplication" finished-at="2018-09-26T09:35:03Z" duration-ms="6299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="testA()[pri:0, instance:script.TestDemo@21b2e768]" started-at="2018-09-26T09:35:03Z" name="testA" finished-at="2018-09-26T09:35:03Z" duration-ms="24" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:script.TestDemo@21b2e768]" started-at="2018-09-26T09:35:03Z" name="closeApplication" finished-at="2018-09-26T09:35:03Z" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- script.TestDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
