@@ -8,19 +8,31 @@
       <![CDATA[Row:1]]>
     </line>
     <line>
-      <![CDATA[Photo:./SreenShots/Thu Sep 27 12_11_57 IST 2018.png]]>
+      <![CDATA[TesttestAis Passed]]>
     </line>
   </reporter-output>
-  <suite started-at="2018-09-27T06:41:45Z" name="Default suite" finished-at="2018-09-27T06:42:00Z" duration-ms="14278">
+  <suite started-at="2018-09-27T09:53:08Z" name="Suite" finished-at="2018-09-27T09:53:23Z" duration-ms="14178">
     <groups>
     </groups>
-    <test started-at="2018-09-27T06:41:45Z" name="Default test" finished-at="2018-09-27T06:42:00Z" duration-ms="14278">
+    <test started-at="2018-09-27T09:53:08Z" name="Test" finished-at="2018-09-27T09:53:23Z" duration-ms="14178">
       <class name="script.TestDemo">
-        <test-method is-config="true" signature="openApplication()[pri:0, instance:script.TestDemo@5609159b]" started-at="2018-09-27T06:41:45Z" name="openApplication" finished-at="2018-09-27T06:41:54Z" duration-ms="8888" status="PASS">
+        <test-method is-config="true" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@7c1e2a9e]" started-at="2018-09-27T09:53:09Z" name="openApplication" finished-at="2018-09-27T09:53:18Z" duration-ms="8989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="testA()[pri:0, instance:script.TestDemo@5609159b]" started-at="2018-09-27T06:41:54Z" name="testA" finished-at="2018-09-27T06:41:57Z" duration-ms="3216" status="PASS">
+        <test-method signature="testA()[pri:0, instance:script.TestDemo@7c1e2a9e]" started-at="2018-09-27T09:53:18Z" name="testA" finished-at="2018-09-27T09:53:20Z" duration-ms="2438" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Data:UserName]]>
@@ -28,16 +40,23 @@
             <line>
               <![CDATA[Row:1]]>
             </line>
-            <line>
-              <![CDATA[Photo:./SreenShots/Thu Sep 27 12_11_57 IST 2018.png]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testA -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:script.TestDemo@5609159b]" started-at="2018-09-27T06:41:57Z" name="closeApplication" finished-at="2018-09-27T06:42:00Z" duration-ms="2107" status="PASS">
+        <test-method is-config="true" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestDemo@7c1e2a9e]" started-at="2018-09-27T09:53:20Z" name="closeApplication" finished-at="2018-09-27T09:53:23Z" duration-ms="2683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=TestDemo.testA()[pri:0, instance:script.TestDemo@7c1e2a9e] output=Data:UserName]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[TesttestAis Passed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- script.TestDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
