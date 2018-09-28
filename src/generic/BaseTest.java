@@ -25,13 +25,13 @@ import org.testng.annotations.Parameters;
 		 System.setProperty( GECKO_KEY ,GECKO_VALUE);
 	 }
 	@Parameters({"ip","browser"})
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void openApplication(@Optional("localhost")String ip,@Optional("chrome")String browser) {
-		driver=Utility.openBrowser(driver, "localhost", "chrome");
+		driver=Utility.openBrowser(driver, ip, browser);
 		driver.manage().timeouts().implicitlyWait(duration, TimeUnit.SECONDS);
 		driver.get(url);
 	}
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void closeApplication(ITestResult result) {
 		String name = result.getName();
 		int status = result.getStatus();

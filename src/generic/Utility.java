@@ -113,7 +113,7 @@ public class Utility {
 		else
 		{
 			try {
-				URL u = new URL("hhtp://"+ip+":4444/wd/hub");
+				URL u = new URL("http://"+ip+":4444/wd/hub");
 				DesiredCapabilities d=new DesiredCapabilities();
 				d.setBrowserName(browser);
 				driver = new RemoteWebDriver(u, d);

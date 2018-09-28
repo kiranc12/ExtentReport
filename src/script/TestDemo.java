@@ -7,12 +7,27 @@ import org.testng.annotations.Test;
 
 import generic.BaseTest;
 import generic.Utility;
+import page.LoginPage;
 
 public class TestDemo extends BaseTest{
 	@Test
 	public void testA() {
-		String data = Utility.getXLData(INPUT_PATH, "sheet1", 0, 0);
-		Reporter.log("Data:"+data,true);
+		
+		
+		LoginPage page = new LoginPage(driver);
+		
+		String name = Utility.getXLData(INPUT_PATH, "sheet1", 1, 0);
+		String pass = Utility.getXLData(INPUT_PATH, "sheet1", 1, 1);
+		
+		page.setUserName(name);
+		page.setPassword(pass);
+		page.clickLogin();
+		
+		
+		
+		
+		
+		//Reporter.log("Data:"+data,true);
 		
 		int r = Utility.getXRowCount(INPUT_PATH, "sheet1");
 		Reporter.log("Row:"+r,true);
