@@ -28,7 +28,11 @@ public class LoginPage {
 		pwTB.sendKeys(pass);
 	}
 	public void clickLogin() {
-		loginBTN.click();;
+		
+		loginBTN.click();
+		
+		//HomePage hpage = new HomePage(driver);
+		//return hpage;
 	}
 	
 	

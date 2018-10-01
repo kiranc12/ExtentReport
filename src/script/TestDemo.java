@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import generic.BaseTest;
 import generic.Utility;
+import page.HomePage;
 import page.LoginPage;
 
 public class TestDemo extends BaseTest{
@@ -22,11 +23,8 @@ public class TestDemo extends BaseTest{
 		page.setUserName(name);
 		page.setPassword(pass);
 		page.clickLogin();
-		
-		
-		
-		
-		
+		HomePage homePage = new HomePage(driver);
+		homePage.clickLogout();
 		//Reporter.log("Data:"+data,true);
 		
 		int r = Utility.getXRowCount(INPUT_PATH, "sheet1");
