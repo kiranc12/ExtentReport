@@ -43,6 +43,7 @@ import org.testng.annotations.Parameters;
 		{
 			Reporter.log("Test"+name+"is Passed",true);
 		}
+
 		Utility.getPhoto(driver, PHOTO_PATH);
 		driver.close();
 	}
